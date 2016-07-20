@@ -74,7 +74,7 @@ def get_input():
     '''Get and sanitize user input for lookup.'''
 
     your_hand = input('Enter your total or two cards separated by a space: ')
-    delim = ',' if ',' in your_hand else ''  # just in case they enter a comma
+    delim = ',' if ',' in your_hand else ' '  # just in case they enter a comma
     your_hand = ''.join(your_hand.split(delim)).upper()  # match strategy keys
     dealer_card = input('Enter dealer card: ')
 
