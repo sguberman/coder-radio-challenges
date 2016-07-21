@@ -7,6 +7,9 @@ def build_strategy():
 
     # Player hands are 'rows' from the table
     hands = dict()
+    hands['5'] = 'H H H H H H H H H H'  # 5-7 not on table
+    hands['6'] = 'H H H H H H H H H H'
+    hands['7'] = 'H H H H H H H H H H'
     hands['8'] = 'H H H H H H H H H H'
     hands['9'] = 'H D D D D H H H H H'
     hands['10'] = 'D D D D D D D D H H'
@@ -17,6 +20,8 @@ def build_strategy():
     hands['15'] = 'S S S S S H H H XH XH'
     hands['16'] = 'S S S S S H H XH XH XH'
     hands['17'] = 'S S S S S S S S S XS'
+    hands['18'} = 'S S S S S S S S S XS'  # 18-19 not on table
+    hands['19'] = 'S S S S S S S S S XS'
     hands['A2'] = 'H H H D D H H H H H'
     hands['A3'] = 'H H H D D H H H H H'
     hands['A4'] = 'H H D D D H H H H H'
